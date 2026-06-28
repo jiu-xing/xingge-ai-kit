@@ -4,103 +4,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph 标签（知乎/微信抓取这些生成卡片） -->
-  <meta property="og:title" content="AI自动化实战工具包 · 免费领取">
-  <meta property="og:description" content="含源码+部署教程，手把手教你用AI做知乎自动发布、闲鱼自动运营。作者：星哥">
+  <meta property="og:title" content="🤖星哥AI实战工具包 · 免费领取">
+  <meta property="og:description" content="旧元素重组，风口不是追出来的是长出来的。全平台AI开发+实操手把手拆解，从0到10全流程喂给你。">
   <meta property="og:image" content="https://jiu-xing.github.io/xingge-ai-kit/og-image.jpg">
   <meta property="og:image:secure_url" content="https://jiu-xing.github.io/xingge-ai-kit/og-image.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="AI自动化实战工具包">
+  <meta property="og:image:alt" content="星哥AI实战工具包">
   <meta property="og:url" content="https://jiu-xing.github.io/xingge-ai-kit/">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="星哥的AI实验室">
+  <meta property="og:site_name" content="星哥">
 
-  <!-- 微信/知乎兼容 -->
-  <meta itemprop="name" content="AI自动化实战工具包 · 免费领取">
-  <meta itemprop="description" content="含源码+部署教程，手把手教你用AI做知乎自动发布、闲鱼自动运营">
+  <meta itemprop="name" content="🤖星哥AI实战工具包 · 免费领取">
+  <meta itemprop="description" content="旧元素重组，风口不是追出来的是长出来的。全平台AI开发+实操手把手拆解，从0到10全流程喂给你。">
   <meta itemprop="image" content="https://jiu-xing.github.io/xingge-ai-kit/og-image.jpg">
 
-  <title>AI自动化实战工具包 · 星哥</title>
+  <title>星哥AI实战工具包</title>
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif; background: #f6f6f6; color: #1a1a1a; }
+    body { font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif; background: #0a0a0a; color: #d4d4d4; line-height: 1.6; }
 
-    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 48px 24px; text-align: center; }
-    .hero h1 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
-    .hero p { font-size: 16px; opacity: 0.9; }
+    .hero { background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); border-bottom: 1px solid #c9a84c; padding: 56px 24px 44px; text-align: center; }
+    .hero-tag { display: inline-block; border: 1px solid #c9a84c; color: #c9a84c; font-size: 12px; padding: 4px 14px; border-radius: 20px; letter-spacing: 2px; margin-bottom: 18px; }
+    .hero h1 { font-size: 26px; font-weight: 700; color: #f0e6c8; margin-bottom: 10px; }
+    .hero h1 .hl { color: #c9a84c; }
+    .hero .sub { font-size: 15px; color: #999; max-width: 420px; margin: 0 auto; }
+    .hero .hook { margin-top: 20px; font-size: 14px; color: #c9a84c; font-weight: 500; border-top: 1px solid #222; padding-top: 16px; max-width: 480px; margin-left: auto; margin-right: auto; }
 
     .content { max-width: 680px; margin: 32px auto; padding: 0 20px; }
-    .card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
-    .card h2 { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: #333; }
-    .card p { font-size: 15px; line-height: 1.8; color: #555; }
 
-    .resource { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid #f0f0f0; }
-    .resource:last-child { border-bottom: none; }
-    .resource-icon { width: 40px; height: 40px; border-radius: 8px; background: #f0f4ff; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-    .resource-body { flex: 1; }
-    .resource-body .name { font-size: 15px; font-weight: 500; color: #1a1a1a; }
-    .resource-body .desc { font-size: 13px; color: #999; margin-top: 2px; }
+    .section-title { font-size: 13px; color: #c9a84c; text-transform: uppercase; letter-spacing: 3px; margin: 36px 0 16px; padding-left: 12px; border-left: 2px solid #c9a84c; }
 
-    .wechat-section { background: #fffbe6; border: 1px solid #ffe58f; border-radius: 12px; padding: 20px; text-align: center; }
-    .wechat-section h3 { font-size: 16px; color: #d48806; margin-bottom: 8px; }
-    .wechat-section p { font-size: 14px; color: #8c6d1f; line-height: 1.7; }
-    .wechat-id { display: inline-block; background: #fff; border: 1px solid #ffe58f; border-radius: 6px; padding: 6px 16px; font-size: 15px; font-weight: 600; color: #d48806; margin-top: 10px; }
+    .card { background: #141414; border: 1px solid #222; border-radius: 10px; padding: 20px; margin-bottom: 12px; transition: border 0.2s; }
+    .card:hover { border-color: #c9a84c; }
+    .card .num { display: inline-block; width: 28px; height: 28px; border-radius: 50%; background: #1a1a1a; border: 1px solid #333; color: #c9a84c; text-align: center; line-height: 26px; font-size: 13px; font-weight: 600; margin-right: 10px; flex-shrink: 0; }
+    .card-row { display: flex; align-items: flex-start; gap: 10px; }
+    .card-body { flex: 1; }
+    .card-body .name { font-size: 15px; font-weight: 600; color: #f0e6c8; margin-bottom: 4px; }
+    .card-body .desc { font-size: 13px; color: #888; line-height: 1.6; }
+    .card-body .tags { margin-top: 8px; }
+    .tag { display: inline-block; background: rgba(201,168,76,0.12); color: #c9a84c; font-size: 11px; padding: 2px 8px; border-radius: 3px; margin-right: 6px; }
 
-    .footer { text-align: center; padding: 32px 20px; color: #bbb; font-size: 13px; }
+    .cta-box { background: linear-gradient(135deg, #1a1a1a, #141414); border: 1px solid #c9a84c; border-radius: 12px; padding: 28px 24px; text-align: center; margin: 32px 0; }
+    .cta-box h3 { font-size: 18px; color: #f0e6c8; margin-bottom: 12px; }
+    .cta-box p { font-size: 14px; color: #aaa; margin-bottom: 16px; line-height: 1.7; }
+    .cta-box .wechat-id { display: inline-block; background: #0a0a0a; border: 1px solid #c9a84c; border-radius: 6px; padding: 8px 24px; font-size: 18px; font-weight: 700; color: #c9a84c; letter-spacing: 1px; }
+    .cta-box .qr-wrap { margin: 18px auto 0; width: 180px; height: 180px; border-radius: 10px; overflow: hidden; border: 2px solid #222; }
+    .cta-box .qr-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+    .principles { background: #141414; border: 1px solid #222; border-radius: 10px; padding: 20px; margin: 24px 0; }
+    .principles .p-title { font-size: 14px; font-weight: 600; color: #f0e6c8; margin-bottom: 14px; }
+    .principles ul { list-style: none; }
+    .principles li { font-size: 13px; color: #aaa; padding: 8px 0; border-bottom: 1px solid #1a1a1a; padding-left: 16px; position: relative; }
+    .principles li:last-child { border-bottom: none; }
+    .principles li::before { content: '◆'; position: absolute; left: 0; color: #c9a84c; font-size: 10px; top: 10px; }
+
+    .footer { text-align: center; padding: 40px 20px; color: #555; font-size: 13px; border-top: 1px solid #1a1a1a; margin-top: 40px; }
+    .footer .gold { color: #c9a84c; }
   </style>
 </head>
 <body>
 
   <div class="hero">
-    <h1>AI 自动化实战工具包</h1>
-    <p>知乎自动发布 · 闲鱼AI运营 · 开源可直接用</p>
+    <div class="hero-tag">STAR AI LAB</div>
+    <h1><span class="hl">🤖星哥AI</span> 实战工具包</h1>
+    <p class="sub">全平台AI自动化开发 · 手把手实操拆解 · 免费领取</p>
+    <p class="hook">风口不是追出来的是长出来的——旧元素重组，从0到10完整教。</p>
   </div>
 
   <div class="content">
+
+    <div class="section-title">🔥 核心工具包</div>
+
     <div class="card">
-      <h2>内含资源</h2>
-      <div class="resource">
-        <div class="resource-icon">🦞</div>
-        <div class="resource-body">
-          <div class="name">OpenClaw 开源项目</div>
-          <div class="desc">AI自动化工作流引擎，支持知乎/闲鱼多平台</div>
-        </div>
-      </div>
-      <div class="resource">
-        <div class="resource-icon">🐟</div>
-        <div class="resource-body">
-          <div class="name">闲鱼AI运营助手 MVP</div>
-          <div class="desc">自动生成标题/文案/上架，DeepSeek驱动</div>
-        </div>
-      </div>
-      <div class="resource">
-        <div class="resource-icon">📝</div>
-        <div class="resource-body">
-          <div class="name">知乎自动发布脚本</div>
-          <div class="desc">抓取+二次创作+定时发布，全流程自动化</div>
+      <div class="card-row">
+        <span class="num">1</span>
+        <div class="card-body">
+          <div class="name">AI知识库搭建 · 个人垄断引擎</div>
+          <div class="desc">把你的经验、案例、判断力装进Obsidian知识库，让AI直接调用。旧元素重组，打造只属于你的差异化护城河。含完整搭建模板+扫库指令。</div>
+          <div class="tags"><span class="tag">Obsidian</span><span class="tag">AI扫库</span><span class="tag">旧元素重组</span></div>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <h2>教学文章</h2>
-      <p>更多AI自动化实战教程，持续更新中。用AI把重复工作交给机器，你把时间用在创作上。</p>
+      <div class="card-row">
+        <span class="num">2</span>
+        <div class="card-body">
+          <div class="name">小红书AI自动化工具包</div>
+          <div class="desc">AI写搜索SEO笔记、自动布局关键词、批量生成封面方案。从起号到接单到卖货，四年前星哥踩过的坑，全拆给你。</div>
+          <div class="tags"><span class="tag">SEO布局</span><span class="tag">AI内容</span><span class="tag">商单变现</span></div>
+        </div>
+      </div>
     </div>
 
-    <div class="wechat-section">
-      <h3>加入交流群</h3>
-      <p>扫码或搜索微信号，获取最新工具包更新<br>群内不定期分享AI自动化实战技巧</p>
-      <div class="wechat-id">微信号：xingge_ai</div>
+    <div class="card">
+      <div class="card-row">
+        <span class="num">3</span>
+        <div class="card-body">
+          <div class="name">视频号AI虚拟电商工具包</div>
+          <div class="desc">用AI做虚拟产品：选题→内容→上架→投放全流程自动化。不做搬运不做盗版，每一个字都是原创，平台打不到你头上。</div>
+          <div class="tags"><span class="tag">虚拟产品</span><span class="tag">原创内容</span><span class="tag">全流程</span></div>
+        </div>
+      </div>
     </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="num">4</span>
+        <div class="card-body">
+          <div class="name">抖音AI虚拟电商工具包</div>
+          <div class="desc">AI驱动抖音虚拟电商全链路：爆款标题生成、AI剪视频、自动化上架、评论区AI托管。从一根毛都没有到跑通出单。</div>
+          <div class="tags"><span class="tag">AI剪辑</span><span class="tag">自动上架</span><span class="tag">评论托管</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-row">
+        <span class="num">5</span>
+        <div class="card-body">
+          <div class="name">企业AI流量自动化工具包</div>
+          <div class="desc">帮品牌搭AI内容获客系统：知识库+AI矩阵账号+自动化投放。星哥已帮多家企业跑通，企业培训收入单次10万+。</div>
+          <div class="tags"><span class="tag">企业培训</span><span class="tag">矩阵获客</span><span class="tag">AI投放</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="principles">
+      <div class="p-title">💡 做这些工具包，星哥只靠一条铁律</div>
+      <ul>
+        <li>旧元素重组——你把不同的事拆开，重新拼成一件从来没人做过的新事</li>
+        <li>AI不是来替代你的，是来帮你把脑子的经验装进知识库，规模化输出</li>
+        <li>别人收费的课，星哥我直接拆开写出来喂给你，不怕你学，就怕你不干</li>
+      </ul>
+    </div>
+
+    <div class="cta-box">
+      <h3>📲 加入星哥AI实验室</h3>
+      <p>一群兄弟一起学AI、搞项目。<br>星哥每次探到新路子，先在里面唠。<br>工具包持续更新，永远免费。</p>
+      <div class="wechat-id">JX88uu</div>
+      <div class="qr-wrap"><img src="https://jiu-xing.github.io/xingge-ai-kit/wechat-qr.jpg" alt="星哥微信二维码"></div>
+      <p style="margin-top:12px;font-size:12px;color:#666;">扫码或搜索上方微信号，备注"AI工具包"</p>
+    </div>
+
   </div>
 
   <div class="footer">
-    星哥 · AI自动化实验室 · 知乎 @星哥
+    <span class="gold">星哥</span> · AI实验室 · 旧元素重组，风口自己长出来<br>
+    <span style="color:#444;">工具包持续更新，关注不迷路</span>
   </div>
 
-<!-- deployed -->
 </body>
 </html>
